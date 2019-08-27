@@ -10,7 +10,18 @@ namespace Assignment1
     {
         static void Main(string[] args)
         {
-            EmployeeList EmpObj = new EmployeeList();
+
+            Console.WriteLine("Press 1 to add an organisation");
+            int choice = 1;
+            switch(choice)
+            {
+                case 1:
+                    Organization OrgObj = new Organization();
+                    OrgObj.AddOrgDetails();
+                    break;
+
+            }
+            Employee EmpObj = new Employee();
             EmpObj.AddDetails();
         }
     }
